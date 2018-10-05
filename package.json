@@ -15,11 +15,43 @@
     "contributes": {
         "languages": [
             {
-                "id": "EXTENSION",
-                "aliases": ["EXTENSION"],
-                "extensions": [".EXTENSION"],
-                "filenames": ["EXTENSIONfile"],
-                "firstLine": "^...",
+                "id": "bash",
+                "aliases": ["bash"],
+                "extensions": [
+                  ".bash",
+                  ".bashrc",
+                  ".bash_aliases",
+                  ".bash_profile",
+                  ".bash_login",
+                  ".profile",
+                  ".bash_logout"
+                ],
+                "filenames": [],
+                "firstLine": "^#!.*\\b(bash).*",
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "zsh",
+                "aliases": ["zsh"],
+                "extensions": [
+                  ".zsh",
+                  ".zshrc",
+                  ".zprofile",
+                  ".zlogin",
+                  ".zlogout",
+                  ".zshenv",
+                  ".zsh-theme"
+                ],
+                "filenames": [],
+                "firstLine": "^#!.*\\b(zsh).*",
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "sh",
+                "aliases": ["sh"],
+                "extensions": [".sh"],
+                "filenames": [],
+                "firstLine": "^#!.*\\b(sh).*",
                 "configuration": "./language-configuration.json"
             }
         ],
@@ -45,6 +77,7 @@
         "color": "#1e1e1e",
         "theme": "dark"
     },
+    "icon": "assets/bash.png",
     "devDependencies": {
         "gulp": "^3.9.1",
         "gulp-json5-to-json": "^0.2.1",
