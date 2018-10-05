@@ -3,12 +3,12 @@
     "string": {
       "patterns": [
         {
-          "name": "string.quoted.single.shell",
+          "name": "string.quoted.single.sh",
           "begin": "'",
           "end": "'",
         },
         {
-          "name": "string.quoted.double.shell",
+          "name": "string.quoted.double.sh",
           "begin": "\"",
           "end": "\"",
         },

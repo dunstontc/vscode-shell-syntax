@@ -1,47 +1,43 @@
 {
-    "name": "vscode-LANGUAGE-syntax",
-    "displayName": "vscode-LANGUAGE-syntax",
-    "description": "Syntax highlighting for LANGUAGE.",
+    "name": "vscode-shell-syntax",
+    "displayName": "vscode-shell-syntax",
+    "description": "Syntax highlighting for Bash, Zsh, & POSIX Sh.",
     "version": "0.0.1",
     "publisher": "dunstontc",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dunstontc/vscode-LANGUAGE-syntax.git"
+        "url": "https://github.com/dunstontc/vscode-shell-syntax.git"
     },
-    "bugs": {
-        "url": "https://github.com/dunstontc/vscode-LANGUAGE-syntax/issues"
-    },
-    "scripts": {
-        "start": "gulp watch"
-    },
-    "engines": {
-        "vscode": "^1.20.0"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
+    "bugs": {"url": "https://github.com/dunstontc/vscode-shell-syntax/issues"},
+    "scripts": {"start": "gulp watch"},
+    "engines": {"vscode": "^1.20.0"},
+    "categories": ["Programming Languages"],
     "contributes": {
         "languages": [
             {
                 "id": "EXTENSION",
-                "aliases": [
-                    "EXTENSION"
-                ],
-                "extensions": [
-                    ".EXTENSION"
-                ],
-                "filenames": [
-                    "EXTENSIONfile"
-                ],
+                "aliases": ["EXTENSION"],
+                "extensions": [".EXTENSION"],
+                "filenames": ["EXTENSIONfile"],
                 "firstLine": "^...",
                 "configuration": "./language-configuration.json"
             }
         ],
         "grammars": [
             {
-                "language": "EXTENSION",
-                "scopeName": "source.EXTENSION",
-                "path": "./syntaxes/EXTENSION.tmLanguage.json"
+                "language": "bash",
+                "scopeName": "source.bash",
+                "path": "./syntaxes/bash.tmLanguage.json"
+            },
+            {
+                "language": "zsh",
+                "scopeName": "source.zsh",
+                "path": "./syntaxes/zsh.tmLanguage.json"
+            },
+            {
+                "language": "sh",
+                "scopeName": "source.sh",
+                "path": "./syntaxes/sh.tmLanguage.json"
             }
         ]
     },
