@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "zsh",
-    "scopeName": "source.zsh",
+    "name": "sh",
+    "scopeName": "source.sh",
     "patterns": [
         {
             "include": "#comment"
@@ -50,11 +50,11 @@
                     "begin": "#",
                     "beginCaptures": {
                         "0": {
-                            "name": "punctuation.definition.comment.zsh"
+                            "name": "punctuation.definition.comment.sh"
                         }
                     },
                     "end": "$",
-                    "name": "comment.line.number-sign.zsh"
+                    "name": "comment.line.number-sign.sh"
                 }
             ]
         },
@@ -85,12 +85,12 @@
         "string": {
             "patterns": [
                 {
-                    "name": "string.quoted.single.zsh",
+                    "name": "string.quoted.single.sh",
                     "begin": "'",
                     "end": "'"
                 },
                 {
-                    "name": "string.quoted.double.zsh",
+                    "name": "string.quoted.double.sh",
                     "begin": "\"",
                     "end": "\""
                 }

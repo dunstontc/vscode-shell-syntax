@@ -1,7 +1,14 @@
 {
   "repository": {
     "comment": {
-      "patterns": []
+      "patterns": [
+        {
+					"begin": "#",
+					"beginCaptures": {"0": {"name": "punctuation.definition.comment.bash"}},
+					"end": "$",
+					"name": "comment.line.number-sign.bash"
+				}
+      ]
     }
   }
 }

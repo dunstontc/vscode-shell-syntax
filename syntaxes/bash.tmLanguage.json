@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "LANGUAGE",
-    "scopeName": "source.EXTENSION",
+    "name": "bash",
+    "scopeName": "source.bash",
     "patterns": [
         {
             "include": "#comment"
@@ -45,7 +45,18 @@
     ],
     "repository": {
         "comment": {
-            "patterns": []
+            "patterns": [
+                {
+                    "begin": "#",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.bash"
+                        }
+                    },
+                    "end": "$",
+                    "name": "comment.line.number-sign.bash"
+                }
+            ]
         },
         "constant": {
             "patterns": []
@@ -63,7 +74,12 @@
             "patterns": []
         },
         "operator": {
-            "patterns": []
+            "patterns": [
+                {
+                    "match": "~(!/)",
+                    "name": "keyword.operator.bash"
+                }
+            ]
         },
         "punctuation": {
             "patterns": []
@@ -74,12 +90,12 @@
         "string": {
             "patterns": [
                 {
-                    "name": "string.quoted.single.shell",
+                    "name": "string.quoted.single.bash",
                     "begin": "'",
                     "end": "'"
                 },
                 {
-                    "name": "string.quoted.double.shell",
+                    "name": "string.quoted.double.bash",
                     "begin": "\"",
                     "end": "\""
                 }

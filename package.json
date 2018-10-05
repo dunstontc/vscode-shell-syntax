@@ -24,9 +24,9 @@
                   ".bash_profile",
                   ".bash_login",
                   ".profile",
+                  ".inputrc",
                   ".bash_logout"
                 ],
-                "filenames": [],
                 "firstLine": "^#!.*\\b(bash).*",
                 "configuration": "./language-configuration.json"
             },
@@ -42,7 +42,6 @@
                   ".zshenv",
                   ".zsh-theme"
                 ],
-                "filenames": [],
                 "firstLine": "^#!.*\\b(zsh).*",
                 "configuration": "./language-configuration.json"
             },
@@ -50,7 +49,6 @@
                 "id": "sh",
                 "aliases": ["sh"],
                 "extensions": [".sh"],
-                "filenames": [],
                 "firstLine": "^#!.*\\b(sh).*",
                 "configuration": "./language-configuration.json"
             }

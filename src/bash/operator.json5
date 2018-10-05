@@ -1,7 +1,12 @@
 {
   "repository": {
     "operator": {
-      "patterns": []
+      "patterns": [
+        {
+          "match": "~(!/)",
+          "name": "keyword.operator.bash",
+        }
+      ]
     }
   }
 }
