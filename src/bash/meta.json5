@@ -1,7 +1,26 @@
 {
   "repository": {
     "meta": {
-      "patterns": []
+      "patterns": [
+        {
+          "begin": "\\$\\(\\(",
+          "end": "\\)\\)",
+          // "name": "meta.arithmetic-expansion.bash",
+          "name": "storage.type.bash",
+        },
+        {
+          "begin": "\\$\\(",
+          "end": "\\)",
+          // "name": "meta.command-substitution.bash",
+          "name": "storage.type.bash",
+        },
+        {
+          "begin": "\\$\\{",
+          "end": "\\}",
+          // "name": "meta.parameter-expansion.bash",
+          "name": "storage.type.bash",
+        }
+      ]
     }
   }
 }

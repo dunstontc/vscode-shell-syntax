@@ -11,6 +11,12 @@
           "name": "string.quoted.double.bash",
           "begin": "\"",
           "end": "\"",
+          "patterns": [
+            {
+              "name": "variable.other.bash",
+              "match": "\\$\\w+",
+            }
+          ]
         },
       ]
     }

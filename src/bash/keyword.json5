@@ -1,7 +1,12 @@
 {
   "repository": {
     "keyword": {
-      "patterns": []
+      "patterns": [
+        {
+          "name": "keyword.control.bash",
+          "match": "\\b(break|case|continue|do|done|elif|else|esac|exit|fi|for|if|in|return|select|switch|then|until|while)\\b",
+        }
+      ]
     }
   }
 }

@@ -3,11 +3,15 @@
     "comment": {
       "patterns": [
         {
+          "match": "^#!.*\\b(bash).*",
+          "name": "comment.line.number-sign.shebang.bash"
+        },
+        {
 					"begin": "#",
 					"beginCaptures": {"0": {"name": "punctuation.definition.comment.bash"}},
 					"end": "$",
 					"name": "comment.line.number-sign.bash"
-				}
+				},
       ]
     }
   }

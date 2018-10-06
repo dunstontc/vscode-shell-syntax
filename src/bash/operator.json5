@@ -5,7 +5,15 @@
         {
           "match": "~(!/)",
           "name": "keyword.operator.bash",
-        }
+        },
+        {
+          "match": "=",
+          "name": "keyword.operator.bash",
+        },
+        {
+          "match": "&{2}",
+          "name": "keyword.operator.bash",
+        },
       ]
     }
   }

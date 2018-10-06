@@ -1,7 +1,12 @@
 {
   "repository": {
     "constant": {
-      "patterns": []
+      "patterns": [
+        {
+          "name": "constant.numeric.bash",
+          "match": "\\d",
+        }
+      ]
     }
   }
 }

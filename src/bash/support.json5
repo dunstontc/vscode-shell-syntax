@@ -1,7 +1,16 @@
 {
   "repository": {
     "support": {
-      "patterns": []
+      "patterns": [
+        {
+          "name": "support.function.builtin.bash",
+          "match": "\\b(break|cd|continue|eval|exec|exit|export|getopts|hash|pwd|readonly|return|shift|test|times|trap|umask|unset)\\b",
+        },
+        {
+          "name": "support.function.builtin.bash",
+          "match": "\\b(alias|bind|builtin|caller|command|declare|echo|enable|help|let|local|logout|mapfile|printf|read|readarray|source|type|typeset|ulimit|unalias)\\b",
+        },
+      ]
     }
   }
 }

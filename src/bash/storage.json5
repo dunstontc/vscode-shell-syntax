@@ -1,7 +1,12 @@
 {
   "repository": {
     "storage": {
-      "patterns": []
+      "patterns": [
+        {
+          "name": "storage.type.bash",
+          "match": "\\b(function|let|local|unset)\\b",
+        }
+      ]
     }
   }
 }

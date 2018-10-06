@@ -1,7 +1,12 @@
 {
   "repository": {
     "entity": {
-      "patterns": []
+      "patterns": [
+        {
+          "name": "entity.name.function",
+          "match": "\\w+(?=\\()",
+        }
+      ]
     }
   }
 }
